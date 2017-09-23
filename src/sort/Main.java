@@ -1,6 +1,7 @@
 package sort;
 
 import sort.MergetSort;
+import sort.QuickSort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -17,6 +18,7 @@ public class Main {
         }
         printArray(array,"原数组:");
         printArray(new MergetSort().MergeSort(array),"归并排序:");
+        printArray(new QuickSort().quickSort(array),"快速排序:");
         Arrays.sort(array);
         printArray(array,"正确排序后数组:");
     }
